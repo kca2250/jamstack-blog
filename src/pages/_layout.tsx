@@ -1,7 +1,23 @@
-export const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className='m-auto px-4 py-2 max-w-screen-md'>
+import { Noto_Sans_JP, Ubuntu } from 'next/font/google';
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header"
+
+const notoSansJp = Noto_Sans_JP({
+  subsets: ['latin'],
+  weight: ['500', '800']
+})
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['400', '700']
+})
+
+
+export const Layout = ({ children }: { children: React.ReactNode }) => (
+  <div className={`${ubuntu.className} ${notoSansJp.className} min-h-screen max-w-screen-md m-auto px-4 py-10 flex flex-col justify-between`}>
+    <div className="flex flex-col gap-10 pb-20">
+      <Header />
       {children}
     </div>
-  )
-}
+    <Footer />
+  </div>
+)
