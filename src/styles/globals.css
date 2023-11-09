@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+h1 {
+  @apply text-2xl font-semibold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2 {
+  @apply text-xl font-semibold;
+  margin-bottom: 12px;
+  margin-top: 24px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h2::before {
+  content: '#';
+}
+
+h3 {
+  @apply text-lg font-semibold;
+  margin-bottom: 12px;
+  margin-top: 32px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+strong {
+  color: rgb(3, 3, 52);
+  margin: 0px 4px;
+}
+
+u {
+  @apply underline text-teal-700 italic;
+  margin: 2px;
+}
+
+img {
+  margin: 12px 0px;
+  outline: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+blockquote {
+  overflow-wrap: break-word;
+  margin: 12px 0px;
+  padding: 12px;
+  border-left: 4px solid #ccc;
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: rgb(68, 68, 68)
+}
+
+pre {
+  margin: 12px 0px;
+  padding: 12px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+code {
+  font-size: 16px;
+  color: rgb(19, 19, 19);
+  background-color: #e0e0e0;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
