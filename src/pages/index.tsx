@@ -5,6 +5,14 @@ import dayjs from "dayjs";
 
 export default function Home({ blog }: { blog: Blog[] }) {
 
+  if (blog.length === 0) {
+    return (
+      <div>
+        <p className="text-center mt-20">記事がありません</p>
+      </div>
+    )
+  }
+
   return (
     <div>
       <ul>
