@@ -4,8 +4,7 @@ import Link from "next/link";
 export const Footer = () => (
   <footer className='text-center'>
     <p className="text-gray-500">
-      @2021 knowledge box
-      @{dayjs().get('year')} knowledge note.
+      @{dayjs().get('year')} kca2250 log
     </p>
     <Link href='/about'>
       <p className='text-cyan-700'>
