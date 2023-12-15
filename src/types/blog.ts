@@ -6,6 +6,7 @@ export type Blog = {
   updatedAt: string;
   publishedAt: string;
   revisedAt: string;
+  description: string;
   category: Category;
 };
 
