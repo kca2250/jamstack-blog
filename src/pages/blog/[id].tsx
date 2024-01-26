@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import { load } from 'cheerio';  // cheerioの直接参照は非推奨だったため、loadをimport
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
-import HeadMeta from "@/components/headMeta";
+import { HeadMeta } from "@/components/headMeta";
 
 export default function BlogId({ blog }: { blog: Blog }) {
   const publishedAt = dayjs(blog.publishedAt).locale("ja").format("YYYY_MM_DD");
