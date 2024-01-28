@@ -23,6 +23,13 @@ h3 {
   margin-top: 32px;
 }
 
+h4 {
+  text-decoration: underline;
+  font-style: italic;
+  margin-bottom: 12px;
+  margin-top: 22px;
+}
+
 p {
   font-size: 18px;
   line-height: 1.9;
@@ -61,4 +68,13 @@ code {
   background-color: #e0e0e0;
   padding: 4px 6px;
   border-radius: 4px;
+}
+
+li {
+  margin-left: 12px;
+
+}
+
+li::before {
+  content: '> ';
 }
