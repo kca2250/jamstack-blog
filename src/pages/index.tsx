@@ -27,7 +27,7 @@ export default function Home({ blog }: { blog: Blog[] }) {
           {blog.map((blog) => {
             const publishedAt = dayjs(blog.publishedAt).format("YYYY/MM/DD");
             return (
-              <li
+              <div
                 key={blog.id}
                 className="py-4 px-2 rounded hover:bg-slate-100 hover:transition-all hover:duration-300"
               >
@@ -38,7 +38,7 @@ export default function Home({ blog }: { blog: Blog[] }) {
                   <p className="underline mr-5">{publishedAt}</p>
                   <p>{blog.title}</p>
                 </Link>
-              </li>
+              </div>
             );
           })}
         </ul>
