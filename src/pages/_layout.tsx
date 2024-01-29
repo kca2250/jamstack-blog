@@ -4,7 +4,7 @@ import { Header } from "@/components/header";
 
 const notoSansJp = Noto_Sans_JP({
   subsets: ["latin"],
-  weight: ["500", "800"],
+  weight: ["200", "500", "800"],
 });
 const ubuntu = Ubuntu({
   subsets: ["latin"],
