@@ -31,7 +31,7 @@ export default function BlogId({ blog }: { blog: Blog }) {
               </p>
             </div>
           </header>
-          <section>
+          <section className="py-10">
             <div
               dangerouslySetInnerHTML={{
                 __html: `${blog.content}`,
