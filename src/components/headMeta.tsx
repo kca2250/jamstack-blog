@@ -1,19 +1,19 @@
-import Head from "next/head"
+import Head from "next/head";
 
 type Props = {
-  title: string,
-  description: string,
-  url: string,
-  type: string,
-  imageUrl: string,
-}
+  title: string;
+  description: string;
+  url: string;
+  type: string;
+  imageUrl: string;
+};
 
-const HeadMeta = (props: Props) => {
-  const { title, description, url, type, imageUrl } = props
+export function HeadMeta(props: Props) {
+  const { title, description, url, type, imageUrl } = props;
 
   return (
     <Head>
-      <title>{title} | kca2250 log</title>
+      <title>{`${title} | biii_grrr`}</title>
 
       {/* ogp setting */}
       <meta name="description" content={description} />
@@ -29,7 +29,5 @@ const HeadMeta = (props: Props) => {
       <meta name="twitter:site" content="@kca2250" />
       <meta name="twitter:creator" content="@kca2250" />
     </Head>
-  )
+  );
 }
-
-export default HeadMeta;
